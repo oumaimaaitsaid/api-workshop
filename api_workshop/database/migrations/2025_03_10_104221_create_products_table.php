@@ -15,8 +15,8 @@ class CreateProductsTable extends Migration
             $table->id(); // Colonne ID auto-incrémentée
             $table->string('name'); // Nom du produit
             $table->text('description')->nullable(); // Description (optionnelle)
-            $table->decimal('price', 8, 2); // Prix avec 8 chiffres au total et 2 décimales
-            $table->timestamps(); // Colonnes created_at et updated_at
+            $table->decimal('price', 8, 2); 
+            $table->timestamps(); 
         });
     }
 
